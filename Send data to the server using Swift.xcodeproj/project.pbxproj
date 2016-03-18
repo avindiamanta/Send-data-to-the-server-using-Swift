@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CCF003F1C9C080600DAEBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF003E1C9C080600DAEBCC /* AppDelegate.swift */; };
+		7CCF00411C9C080600DAEBCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF00401C9C080600DAEBCC /* ViewController.swift */; };
+		7CCF00441C9C080600DAEBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCF00421C9C080600DAEBCC /* Main.storyboard */; };
+		7CCF00461C9C080700DAEBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CCF00451C9C080700DAEBCC /* Assets.xcassets */; };
+		7CCF00491C9C080700DAEBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCF00471C9C080700DAEBCC /* LaunchScreen.storyboard */; };
+		7CCF00541C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF00531C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftTests.swift */; };
+		7CCF005F1C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF005E1C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CCF00501C9C080700DAEBCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CCF00331C9C080500DAEBCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CCF003A1C9C080500DAEBCC;
+			remoteInfo = "Send data to the server using Swift";
+		};
+		7CCF005B1C9C080700DAEBCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CCF00331C9C080500DAEBCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CCF003A1C9C080500DAEBCC;
+			remoteInfo = "Send data to the server using Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CCF003B1C9C080500DAEBCC /* Send data to the server using Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Send data to the server using Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCF003E1C9C080600DAEBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CCF00401C9C080600DAEBCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CCF00431C9C080600DAEBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CCF00451C9C080700DAEBCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CCF00481C9C080700DAEBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CCF004A1C9C080700DAEBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCF004F1C9C080700DAEBCC /* Send data to the server using SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Send data to the server using SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCF00531C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Send_data_to_the_server_using_SwiftTests.swift; sourceTree = "<group>"; };
+		7CCF00551C9C080700DAEBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCF005A1C9C080700DAEBCC /* Send data to the server using SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Send data to the server using SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCF005E1C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Send_data_to_the_server_using_SwiftUITests.swift; sourceTree = "<group>"; };
+		7CCF00601C9C080700DAEBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CCF00381C9C080500DAEBCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CCF004C1C9C080700DAEBCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CCF00571C9C080700DAEBCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CCF00321C9C080500DAEBCC = {
+			isa = PBXGroup;
+			children = (
+				7CCF003D1C9C080500DAEBCC /* Send data to the server using Swift */,
+				7CCF00521C9C080700DAEBCC /* Send data to the server using SwiftTests */,
+				7CCF005D1C9C080700DAEBCC /* Send data to the server using SwiftUITests */,
+				7CCF003C1C9C080500DAEBCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CCF003C1C9C080500DAEBCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF003B1C9C080500DAEBCC /* Send data to the server using Swift.app */,
+				7CCF004F1C9C080700DAEBCC /* Send data to the server using SwiftTests.xctest */,
+				7CCF005A1C9C080700DAEBCC /* Send data to the server using SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CCF003D1C9C080500DAEBCC /* Send data to the server using Swift */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF003E1C9C080600DAEBCC /* AppDelegate.swift */,
+				7CCF00401C9C080600DAEBCC /* ViewController.swift */,
+				7CCF00421C9C080600DAEBCC /* Main.storyboard */,
+				7CCF00451C9C080700DAEBCC /* Assets.xcassets */,
+				7CCF00471C9C080700DAEBCC /* LaunchScreen.storyboard */,
+				7CCF004A1C9C080700DAEBCC /* Info.plist */,
+			);
+			path = "Send data to the server using Swift";
+			sourceTree = "<group>";
+		};
+		7CCF00521C9C080700DAEBCC /* Send data to the server using SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF00531C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftTests.swift */,
+				7CCF00551C9C080700DAEBCC /* Info.plist */,
+			);
+			path = "Send data to the server using SwiftTests";
+			sourceTree = "<group>";
+		};
+		7CCF005D1C9C080700DAEBCC /* Send data to the server using SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF005E1C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftUITests.swift */,
+				7CCF00601C9C080700DAEBCC /* Info.plist */,
+			);
+			path = "Send data to the server using SwiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CCF003A1C9C080500DAEBCC /* Send data to the server using Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CCF00631C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using Swift" */;
+			buildPhases = (
+				7CCF00371C9C080500DAEBCC /* Sources */,
+				7CCF00381C9C080500DAEBCC /* Frameworks */,
+				7CCF00391C9C080500DAEBCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Send data to the server using Swift";
+			productName = "Send data to the server using Swift";
+			productReference = 7CCF003B1C9C080500DAEBCC /* Send data to the server using Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CCF004E1C9C080700DAEBCC /* Send data to the server using SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CCF00661C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using SwiftTests" */;
+			buildPhases = (
+				7CCF004B1C9C080700DAEBCC /* Sources */,
+				7CCF004C1C9C080700DAEBCC /* Frameworks */,
+				7CCF004D1C9C080700DAEBCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CCF00511C9C080700DAEBCC /* PBXTargetDependency */,
+			);
+			name = "Send data to the server using SwiftTests";
+			productName = "Send data to the server using SwiftTests";
+			productReference = 7CCF004F1C9C080700DAEBCC /* Send data to the server using SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CCF00591C9C080700DAEBCC /* Send data to the server using SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CCF00691C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using SwiftUITests" */;
+			buildPhases = (
+				7CCF00561C9C080700DAEBCC /* Sources */,
+				7CCF00571C9C080700DAEBCC /* Frameworks */,
+				7CCF00581C9C080700DAEBCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CCF005C1C9C080700DAEBCC /* PBXTargetDependency */,
+			);
+			name = "Send data to the server using SwiftUITests";
+			productName = "Send data to the server using SwiftUITests";
+			productReference = 7CCF005A1C9C080700DAEBCC /* Send data to the server using SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CCF00331C9C080500DAEBCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Tiffany Diamanta";
+				TargetAttributes = {
+					7CCF003A1C9C080500DAEBCC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					7CCF004E1C9C080700DAEBCC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 7CCF003A1C9C080500DAEBCC;
+					};
+					7CCF00591C9C080700DAEBCC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 7CCF003A1C9C080500DAEBCC;
+					};
+				};
+			};
+			buildConfigurationList = 7CCF00361C9C080500DAEBCC /* Build configuration list for PBXProject "Send data to the server using Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CCF00321C9C080500DAEBCC;
+			productRefGroup = 7CCF003C1C9C080500DAEBCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CCF003A1C9C080500DAEBCC /* Send data to the server using Swift */,
+				7CCF004E1C9C080700DAEBCC /* Send data to the server using SwiftTests */,
+				7CCF00591C9C080700DAEBCC /* Send data to the server using SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CCF00391C9C080500DAEBCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCF00491C9C080700DAEBCC /* LaunchScreen.storyboard in Resources */,
+				7CCF00461C9C080700DAEBCC /* Assets.xcassets in Resources */,
+				7CCF00441C9C080600DAEBCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CCF004D1C9C080700DAEBCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CCF00581C9C080700DAEBCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CCF00371C9C080500DAEBCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCF00411C9C080600DAEBCC /* ViewController.swift in Sources */,
+				7CCF003F1C9C080600DAEBCC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CCF004B1C9C080700DAEBCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCF00541C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CCF00561C9C080700DAEBCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCF005F1C9C080700DAEBCC /* Send_data_to_the_server_using_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CCF00511C9C080700DAEBCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CCF003A1C9C080500DAEBCC /* Send data to the server using Swift */;
+			targetProxy = 7CCF00501C9C080700DAEBCC /* PBXContainerItemProxy */;
+		};
+		7CCF005C1C9C080700DAEBCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CCF003A1C9C080500DAEBCC /* Send data to the server using Swift */;
+			targetProxy = 7CCF005B1C9C080700DAEBCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CCF00421C9C080600DAEBCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CCF00431C9C080600DAEBCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CCF00471C9C080700DAEBCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CCF00481C9C080700DAEBCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CCF00611C9C080700DAEBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CCF00621C9C080700DAEBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CCF00641C9C080700DAEBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Send data to the server using Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiamantApps.Send-data-to-the-server-using-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CCF00651C9C080700DAEBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Send data to the server using Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiamantApps.Send-data-to-the-server-using-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CCF00671C9C080700DAEBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Send data to the server using SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiamantApps.Send-data-to-the-server-using-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Send data to the server using Swift.app/Send data to the server using Swift";
+			};
+			name = Debug;
+		};
+		7CCF00681C9C080700DAEBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Send data to the server using SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiamantApps.Send-data-to-the-server-using-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Send data to the server using Swift.app/Send data to the server using Swift";
+			};
+			name = Release;
+		};
+		7CCF006A1C9C080700DAEBCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Send data to the server using SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiamantApps.Send-data-to-the-server-using-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Send data to the server using Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7CCF006B1C9C080700DAEBCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Send data to the server using SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DiamantApps.Send-data-to-the-server-using-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Send data to the server using Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CCF00361C9C080500DAEBCC /* Build configuration list for PBXProject "Send data to the server using Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CCF00611C9C080700DAEBCC /* Debug */,
+				7CCF00621C9C080700DAEBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CCF00631C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CCF00641C9C080700DAEBCC /* Debug */,
+				7CCF00651C9C080700DAEBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CCF00661C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CCF00671C9C080700DAEBCC /* Debug */,
+				7CCF00681C9C080700DAEBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CCF00691C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CCF006A1C9C080700DAEBCC /* Debug */,
+				7CCF006B1C9C080700DAEBCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CCF00331C9C080500DAEBCC /* Project object */;
+}
