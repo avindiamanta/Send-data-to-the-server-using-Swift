@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
         mainButton.frame = CGRectMake(0, 0, 100, 50)
         mainButton.center = CGPointMake(view.bounds.midX, view.bounds.midY + 100)
         mainButton.backgroundColor = UIColor.blackColor()
-        mainButton.addTarget(self, action: "sendDataToTheServer", forControlEvents: UIControlEvents.TouchDragInside)
+        mainButton.addTarget(self, action: "usingAlamofire", forControlEvents: UIControlEvents.TouchDragInside)
         mainButton.setTitle("SEND", forState: UIControlState.Normal)
         mainButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         //mainButton.title
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // With NSURLSession
     func sendDataToTheServer() {
         let myUrl = NSURL(string: "http://tiffanydiamanta.com/somephpscriptontheserver.php");let request = NSMutableURLRequest(URL:myUrl!);
         request.HTTPMethod = "POST"
@@ -80,7 +82,28 @@ class ViewController: UIViewController {
         
         task.resume()
     }
-
+    
+    // With Alamofire
+    func usingAlamofire() {
+        Alamofire.upload(
+            .POST,
+            "http://tiffanydiamanta.com/somephpscriptontheserver.php",
+        multipartFormData: { multipartFormData in
+            multipartFormData.appendBodyPart(data: "\(self.nameField.text)".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!, name : "visitor_name")
+            multipartFormData.appendBodyPart(data: "\(self.ageField.text)".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!, name : "visitor_email")
+        },
+        encodingCompletion: { encodingResult in
+            switch encodingResult {
+            case .Success(let upload, _, _):
+                upload.responseJSON { response in
+                    debugPrint(response)
+                }
+            case .Failure(let encodingError):
+                print(encodingError)
+            }
+        }
+        )
+    }
 
 }
 

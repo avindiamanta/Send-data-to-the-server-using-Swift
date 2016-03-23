@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72D7A9B05F27D3D47EF42C9C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2CE47C398B4A373342EA68 /* Pods.framework */; };
 		7CCF003F1C9C080600DAEBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF003E1C9C080600DAEBCC /* AppDelegate.swift */; };
 		7CCF00411C9C080600DAEBCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF00401C9C080600DAEBCC /* ViewController.swift */; };
 		7CCF00441C9C080600DAEBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CCF00421C9C080600DAEBCC /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181A1D234C0FE775AB1B4EED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		23E98D4A60FFAC9406E289CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4E2CE47C398B4A373342EA68 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCF003B1C9C080500DAEBCC /* Send data to the server using Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Send data to the server using Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCF003E1C9C080600DAEBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CCF00401C9C080600DAEBCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D7A9B05F27D3D47EF42C9C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		305C5346651730BAC792DA95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E2CE47C398B4A373342EA68 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35A974013C3A0A37A7D05483 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23E98D4A60FFAC9406E289CE /* Pods.debug.xcconfig */,
+				181A1D234C0FE775AB1B4EED /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7CCF00321C9C080500DAEBCC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				7CCF00521C9C080700DAEBCC /* Send data to the server using SwiftTests */,
 				7CCF005D1C9C080700DAEBCC /* Send data to the server using SwiftUITests */,
 				7CCF003C1C9C080500DAEBCC /* Products */,
+				35A974013C3A0A37A7D05483 /* Pods */,
+				305C5346651730BAC792DA95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CCF00631C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using Swift" */;
 			buildPhases = (
+				82F5798BA73AD490B8790D43 /* Check Pods Manifest.lock */,
 				7CCF00371C9C080500DAEBCC /* Sources */,
 				7CCF00381C9C080500DAEBCC /* Frameworks */,
 				7CCF00391C9C080500DAEBCC /* Resources */,
+				570A8DCCC8BA19B695984993 /* Embed Pods Frameworks */,
+				C203ECA32329062341987158 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		570A8DCCC8BA19B695984993 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F5798BA73AD490B8790D43 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C203ECA32329062341987158 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CCF00371C9C080500DAEBCC /* Sources */ = {
@@ -395,6 +470,7 @@
 		};
 		7CCF00641C9C080700DAEBCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E98D4A60FFAC9406E289CE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Send data to the server using Swift/Info.plist";
@@ -406,6 +482,7 @@
 		};
 		7CCF00651C9C080700DAEBCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181A1D234C0FE775AB1B4EED /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Send data to the server using Swift/Info.plist";
@@ -482,6 +559,7 @@
 				7CCF00651C9C080700DAEBCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CCF00661C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				7CCF00681C9C080700DAEBCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CCF00691C9C080700DAEBCC /* Build configuration list for PBXNativeTarget "Send data to the server using SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				7CCF006B1C9C080700DAEBCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
